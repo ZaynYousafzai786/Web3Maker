@@ -20,7 +20,6 @@ function NavbarHead() {
                     </Nav>
 
                     <Nav>
-
                         <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/'}>Web3Maker</Link></Nav.Link>
                         <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Services'}>Services</Link></Nav.Link>
                         <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Tools'}>Tool</Link></Nav.Link>
