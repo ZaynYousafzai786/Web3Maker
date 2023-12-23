@@ -4,6 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../assets/imgs/Navbarlogo.png';
 import '../assets/css/NavbarHead.css';
+import React from 'react';
+import { Link } from 'react-router-dom'
+
 
 function NavbarHead() {
     return (
@@ -18,11 +21,9 @@ function NavbarHead() {
 
                     <Nav>
 
-                        <Nav.Link className='nav-links'>Web3Maker</Nav.Link>
-                        <Nav.Link className='nav-links'>White paper</Nav.Link>
-                        <Nav.Link className='nav-links'>Services</Nav.Link>
-                        <Nav.Link className='nav-links'>Tool</Nav.Link>
-                        <Nav.Link className='nav-links'>Contact Us</Nav.Link>
+                        <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/'}>Web3Maker</Link></Nav.Link>
+                        <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Services'}>Services</Link></Nav.Link>
+                        <Nav.Link className='nav-links'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Tools'}>Tool</Link></Nav.Link>
                         <Button variant="outline-info" className='nav-btn'>Start For Free</Button>
                     </Nav>
                 </Navbar.Collapse>

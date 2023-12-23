@@ -1,6 +1,8 @@
 import Facebook from '../assets/imgs/facebook.png';
 import Twitter from '../assets/imgs/twitter.png';
 import Instagram from '../assets/imgs/instagram.png';
+import React from 'react';
+import { Link } from 'react-router-dom'
 
 
 import { Col, Row } from "react-bootstrap";
@@ -21,9 +23,10 @@ function Footer() {
 
                 <Row>
                     <Col className="ccccol-2">
-                        <Nav.Link className='footer-nav'>Web3Maker</Nav.Link>
-                        <Nav.Link className='footer-nav'>Services</Nav.Link>
-                        <Nav.Link className='footer-nav'>Tool</Nav.Link>
+
+                        <Nav.Link className='footer-nav'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/'}>Web3Maker</Link></Nav.Link>
+                        <Nav.Link className='footer-nav'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Services'}>Services</Link></Nav.Link>
+                        <Nav.Link className='footer-nav'><Link style={{ textDecoration: 'none', color: 'inherit' }} to={'/Tools'}>Tool</Link></Nav.Link>
 
                     </Col>
                 </Row>

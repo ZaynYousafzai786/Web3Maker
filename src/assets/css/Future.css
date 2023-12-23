@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-
     background: url('../imgs/NFT BG.png') center/cover no-repeat, linear-gradient(to right, #544e45, #9f8438);
     background-attachment: fixed;
 }

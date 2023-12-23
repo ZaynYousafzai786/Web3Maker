@@ -5,16 +5,18 @@ import NavbarHead from './components/NavbarHead';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
 import Section2 from './components/Section2';
-
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
 
       <NavbarHead />
-      <HeroSection />
-      <Section2 />
-      <Future />
+      <Routes>
+        <Route path={'/'} element={<HeroSection />} />
+        <Route path={'/Services'} element={<Section2 />} />
+        <Route path={'/Tools'} element={<Future />} />
+      </Routes>
       <Footer />
 
     </>

@@ -20,6 +20,10 @@
     pointer-events: auto;
 }
 
+.nav-links .nav-link-path {
+    text-decoration: none;
+}
+
 .nav-links:hover {
     color: #ffff00;
     transform: scale(1.1);
